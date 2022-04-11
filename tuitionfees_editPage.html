@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SEU | Edit Fees </title>
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- BoxIcons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    
+    <style>
+        .userInputContainer-flex{
+            display: flex;
+            padding: 2em;
+            
+            justify-content: center;
+            align-items: center;
+        }
+
+        .userDetailsInput-container{
+            flex:1;
+            
+            width:30em;
+            background-color: #124559;
+            margin: 0.5em;
+            margin-left: 2em;
+            padding: 1em;
+            border-radius: 5px;
+            padding-left: 4em;
+            
+        }
+
+        .userInputContainer-flex .userDetailsInput-label{
+            color: white;
+            font-size: 17px;
+        }
+
+        .userInputContainer-flex .userDetailsInput-input{
+            border-radius: 5px;
+            width: 20em;
+            height: 2.5em;
+            
+        }
+
+        .userInputContainer-flex .submitButton{
+            margin-top:1em;
+            border-radius: 5px;
+            background-color: teal;
+            color: white;
+            width: 7em;
+            height: 3em;
+            
+        
+      }
+    </style>
+</head>
+<body>
+  <section class="home-section">
+      <h2 class="mb-2 mt-3" style="color: white; text-align: center;">Edit Student's Tuition Fees</h2>
+      <div class="userInputContainer-flex">
+        <div class="flex-child leftColumn">
+            <div class="userDetailsInput-container">
+                <form action="#">
+                    <h2 style="color: white; padding-left: 1.9em;">Current Fees</h2>
+                    <label for="" class="userDetailsInput-label">A-Facility Improvement Fee:</label> <br>
+                    <input type="text" class="userDetailsInput-input" disabled="true"> <br>
+
+                    <label for="" class="userDetailsInput-label">A-Guidance & Councelling Fee:</label> <br>
+                    <input type="text" class="userDetailsInput-input" disabled="true"><br>
+                
+                    <label for="" class="userDetailsInput-label">A-Information Technology Fee:</label> <br>
+                    <input type="text" class="userDetailsInput-input" disabled="true"><br>
+                
+                    <label for="" class="userDetailsInput-label">A-Registration Fee:</label> <br>
+                    <input type="text" class="userDetailsInput-input" disabled="true"><br>
+                
+                    <label for="" class="userDetailsInput-label">A-DCB:</label> <br>
+                    <input type="text" class="userDetailsInput-input" disabled="true"><br>
+                
+                    <label for="" class="userDetailsInput-label">A-Energy Fee:</label> <br>
+                    <input type="text" class="userDetailsInput-input" disabled="true"><br>
+                    
+                    <label for="" class="userDetailsInput-label">A-Medical & Dental Fee:</label> <br>
+                    <input type="text" class="userDetailsInput-input" disabled="true"><br>
+                
+                    <label for="" class="userDetailsInput-label">A-Inst Res/Student Info. System Fee:</label> <br>
+                    <input type="text" class="userDetailsInput-input" disabled="true"><br>
+                
+                    <label for="" class="userDetailsInput-label">A-Student Instituion Fee:</label> <br>
+                    <input type="text" class="userDetailsInput-input" disabled="true"><br>
+                
+                    <label for="" class="userDetailsInput-label">Discounts:</label> <br>
+                    <input type="text" class="userDetailsInput-input" disabled="true"><br>
+                
+                    <label for="" class="userDetailsInput-label">Payments:</label> <br>
+                    <input type="text" class="userDetailsInput-input" disabled="true"><br>
+
+                    <input type="submit" value="Submit" class="submitButton" disabled="true" style="margin-left:-0.5em;">
+                    <input type="reset" value="Reset" class="submitButton" disabled="true">
+                    <input type="submit" value="Back" class="submitButton" disabled="true">
+                </form>
+            </div>   
+        </div>
+        <div class="flex-child">
+            <div class="userDetailsInput-container">
+                <form action="#">
+                    <h2 style="color: white; padding-left: 2.7em; ">New Fees</h2>
+                    <label for="" class="userDetailsInput-label">A-Facility Improvement Fee:</label> <br>
+                    <input type="text" class="userDetailsInput-input"> <br>
+
+                    <label for="" class="userDetailsInput-label">A-Guidance & Councelling Fee:</label> <br>
+                    <input type="text" class="userDetailsInput-input"><br>
+                
+                    <label for="" class="userDetailsInput-label">A-Information Technology Fee:</label> <br>
+                    <input type="text" class="userDetailsInput-input"><br>
+                
+                    <label for="" class="userDetailsInput-label">A-Registration Fee:</label> <br>
+                    <input type="text" class="userDetailsInput-input"><br>
+                
+                    <label for="" class="userDetailsInput-label">A-DCB:</label> <br>
+                    <input type="text" class="userDetailsInput-input" ><br>
+                
+                    <label for="" class="userDetailsInput-label">A-Energy Fee:</label> <br>
+                    <input type="text" class="userDetailsInput-input"><br>
+                    
+                    <label for="" class="userDetailsInput-label">A-Medical & Dental Fee:</label> <br>
+                    <input type="text" class="userDetailsInput-input"><br>
+                
+                    <label for="" class="userDetailsInput-label">A-Inst Res/Student Info. System Fee:</label> <br>
+                    <input type="text" class="userDetailsInput-input" ><br>
+                
+                    <label for="" class="userDetailsInput-label">A-Student Instituion Fee:</label> <br>
+                    <input type="text" class="userDetailsInput-input" ><br>
+                
+                    <label for="" class="userDetailsInput-label">Discounts:</label> <br>
+                    <input type="text" class="userDetailsInput-input" ><br>
+                
+                    <label for="" class="userDetailsInput-label">Payments:</label> <br>
+                    <input type="text" class="userDetailsInput-input"><br>
+
+                    <input type="submit" value="Submit" class="submitButton" style="margin-left:-0.5em;">
+                    <input type="reset" value="Reset" class="submitButton">
+                    <input type="submit" value="Back" class="submitButton">
+                </form>
+            </div>   
+        </div>
+    </div>    
+              
+  </section>
+  <script src="script.js"></script>
+  
+</body>
+</html>
