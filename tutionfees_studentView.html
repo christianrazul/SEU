@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SEU | Tuition Fees </title>
+    <!-- DataTables.net CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- BoxIcons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    
+    <style>
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+          <i class='bx bxs-school icon'></i>
+            <div class="logo_name">S.E.U.</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+          <li>
+              <i class='bx bx-search' ></i>
+             <input type="text" placeholder="Search...">
+             <span class="tooltip">Search</span>
+          </li>
+          <li>
+            <a href="index.html">
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+             <span class="tooltip">Dashboard</span>
+          </li>
+          <li>
+           <a href="#">
+             <i class='bx bxs-user-detail' ></i>
+             <span class="links_name">My Registration</span>
+           </a>
+           <span class="tooltip">My Registration</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-book' ></i>
+             <span class="links_name">My Grades</span>
+           </a>
+           <span class="tooltip">My Grades</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-calendar-plus' ></i>
+             <span class="links_name">Pre-Registration</span>
+           </a>
+           <span class="tooltip">Pre-Registration</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-wallet' ></i>
+             <span class="links_name">Account Balance</span>
+           </a>
+           <span class="tooltip">Account Balance</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-book-bookmark'></i>
+             <span class="links_name">Class Offerings</span>
+           </a>
+           <span class="tooltip">Class Offerings</span>
+         </li>
+         <li>
+           <a href="programme.html">
+             <i class='bx bx-spreadsheet' ></i>
+             <span class="links_name">Programme</span>
+           </a>
+           <span class="tooltip">Programme</span>
+         </li>
+         <li>
+          <a href="userTab.html">
+            <i class='bx bx-user' ></i>
+            <span class="links_name">User</span>
+          </a>
+          <span class="tooltip">User</span>
+        </li>
+         <li>
+           <a href="tuitionfees.html">
+             <i class='bx bx-money' ></i>
+             <span class="links_name">Tuition Fees</span>
+           </a>
+           <span class="tooltip">Tuition Fees</span>
+         </li>
+         <li>
+          <a href="curriculumTab.html">
+            <i class='bx bx-bookmarks' ></i>
+            <span class="links_name">Curriculum</span>
+          </a>
+          <span class="tooltip">Curriculum & Pre-Requisites</span>
+          </li>
+          <li>
+            <a href="studentList.html">
+              <i class='bx bx-list-ul' ></i>
+              <span class="links_name">Student List</span>
+            </a>
+            <span class="tooltip">Student List</span>
+         </li>
+         <li>
+          <a href="mockExamTab.html">
+            <i class='bx bx-pencil'></i>
+            <span class="links_name">Mock Exam</span>
+          </a>
+          <span class="tooltip">Mock Exam</span>
+         </li>
+         
+         
+         <li class="profile">
+             <div class="profile-details">
+               <img src="profile.png" alt="profileImg">
+               <div class="name_job">
+                 <div class="name">Christian Razul</div>
+                 <div class="job">Student</div>
+               </div>
+             </div>
+             <a href="#">
+                <i class='bx bx-log-out' id="log_out" ></i>
+             </a>
+         </li>
+        </ul>
+      </div>
+  <section class="home-section">
+    <div class="content-container">
+        <div class="container-preregTable" >
+            <div class="tuitionfees-header">
+                <h2 class="container-labelText">ACCOUNT BALANCE</h2>
+            </div>
+
+            <div class="tuititonfees-content">
+                <div class="tuitionfees-studentInfo">
+                      <table id="prereg-studinfo">
+                        <tbody>
+                          <tr>
+                            <td>ID No.</td>
+                            <td>9999</td>
+                            <td>Year Level</td>
+                            <td>3</td>
+                          </tr>
+                          <tr>
+                            <td>Name</td>
+                            <td>Chris Chan</td>
+                            <td>Section</td>
+                            <td>ComSc 3-A</td>
+                          </tr>
+                          <tr>
+                            <td>Course</td>
+                            <td>BS-COMPSC</td>
+                            <td>Latest Registration</td>
+                            <td>1st Semester, 2021-2022</td>
+                          </tr>
+                        </tbody>
+                      </table>  
+                </div>
+                
+                <div class="tuitionfees-container">
+                    <div class="tuitionfees-SOA">
+                        <div class="tuitionfees-SOA-header">
+                            <h2>Statement of Account Summary</h2>
+                        </div>
+
+                        <div class="tuitionfees-SOA-content">
+                            <table id="table-SOA">
+                                <tbody>
+                                    <tr>
+                                        <td>OLD ACCOUNT BALANCE:</td>
+                                        <td style="text-align: right; padding-right: 5px;">0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CURRENT DUE:</td>
+                                        <td style="text-align: right; padding-right: 5px;">9,999.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>COMPUTER LOAN:</td>
+                                        <td style="text-align: right; padding-right: 5px;">0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="column-span: 2;">LESS</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left: 50px">ADJUSTMENTS:</td>
+                                        <td style="text-align: right; padding-right: 5px;">0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left: 50px">DISCOUNTS:</td>
+                                        <td style="text-align: right; padding-right: 5px;">0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left: 50px">PAYMENTS:</td>
+                                        <td style="text-align: right; padding-right: 5px;">0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: green; font-weight: 400;">BALANCE:</td>
+                                        <td style="text-align: right; padding-right: 5px;">9,999.00</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                    <div class="tuitionfees-BOF">
+                        <div class="tuitionfees-BOF-header">
+                            <h2>Breakdown of Fees</h2>
+                        </div>
+
+                        <div class="tuitionfees-BOF-content">
+                            <table id="table-BOF">
+                                <tbody>
+                                    <tr>
+                                        <td>TUITION FEE</td>
+                                        <td style="text-align: right; padding-right: 5px;">0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MISCELLANEOUS FEES</td>
+                                        <td style="text-align: right; padding-right: 5px;">9,999.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left: 50px">A-DCB STUDENT ACTIVITIES</td>
+                                        <td style="text-align: right; padding-right: 5px;">0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left: 50px">A-DEVELOPMENT FEE</td>
+                                        <td style="text-align: right; padding-right: 5px;">9,999.00</td>
+                                     </tr>
+                                    <tr>
+                                        <td style="padding-left: 50px">A-ENERGY FEE</td>
+                                        <td style="text-align: right; padding-right: 5px;">0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left: 50px">A-FACILITIES IMPROVEMENTS</td>
+                                        <td style="text-align: right; padding-right: 5px;">0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left: 50px">A-GUIDANCE & COUNSELLING</td>
+                                        <td style="text-align: right; padding-right: 5px;">0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left: 50px">A-INFORMATION TECHNOLOGY FEE</td>
+                                        <td style="text-align: right; padding-right: 5px;">9,999.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left: 50px">A-INST RES/STUDENT INFO SYS FEE</td>
+                                        <td style="text-align: right; padding-right: 5px;">9,999.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left: 50px">A-LIBRARY</td>
+                                        <td style="text-align: right; padding-right: 5px;">9,999.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left: 50px">A-MEDICO DENTAL</td>
+                                        <td style="text-align: right; padding-right: 5px;">9,999.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left: 50px">A-REGISTRATION FEE-OLD</td>
+                                        <td style="text-align: right; padding-right: 5px;">9,999.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left: 50px">A-SAMAHAN</td>
+                                        <td style="text-align: right; padding-right: 5px;">9,999.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left: 50px">A-STUDENT INSURANCE</td>
+                                        <td style="text-align: right; padding-right: 5px;">9,999.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: blue; font-weight: 400">TOTAL CURRENT DUE</td>
+                                        <td style="text-align: right; padding-right: 5px;">9,999.00</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            
+           </div>
+    </div>
+        
+  </section>
+  <script src="script.js"></script>
+  <!-- Bootstrap 4 Script CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+</body>
+</html>

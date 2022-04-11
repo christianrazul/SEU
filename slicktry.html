@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Dashboard | SouthEast University </title>
+    
+    <!-- SlickSlider CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .containerSlider{
+        margin: auto;
+        width: 90%;
+        height: auto;
+        border-radius: 15px;
+        background-color: #598392;
+        justify-content: center;
+        padding: 5px 10px;
+        position: relative;
+        
+      }
+
+      .container-details{
+        
+        background-color: lightblue;
+        border-radius: 15px;
+        margin: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding: 15px 15px;
+        width: 85%;
+        /* height: 87%;  */
+        text-align: justify;
+      }
+      
+      .container-details .subjectName{
+        font-size: large;
+        text-transform: uppercase;
+      }
+
+      .container-details .subjectSched{
+        font-size: small;
+        color: #535353;
+      }
+
+      .container-details .activityDesc{
+        font-size: small;
+        text-transform: capitalize;
+      }
+
+      .container-details a{
+        background-color: teal;
+        color: white;
+        display: inline-block;
+        font-size: small;
+        padding: 5px 10px;
+        border-radius: 3px;
+      }
+    </style>
+    </head>
+<body>
+  
+      <!-- <div class="containerSlider"> -->
+
+        <div class="slider">
+        
+          <div class="slide col-sm-3 col-md-3">
+            <div class="container-details">
+              <h2 class="subjectName">Subject Name + Code</h2>
+              <h3 class="subjectSched">Day + startTime : endTime</h3>
+              <p class="activityDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris felis nunc, aliquet eget pharetra vitae, venenatis vitae mi. Duis vulputate.</p>
+              <a href="#">Go to activity</a>
+            </div>
+          </div>
+          <div class="slide col-sm-3 col-md-3">
+            <div class="container-details">
+              <h2 class="subjectName">Subject Name + Code</h2>
+              <h3 class="subjectSched">Day + startTime : endTime</h3>
+              <p class="activityDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris felis nunc, aliquet eget pharetra vitae, venenatis vitae mi. Duis vulputate.</p>
+              <a href="#">Go to activity</a>
+            </div>
+          </div>
+          <div class="slide col-sm-3 col-md-3">
+            <div class="container-details">
+              <h2 class="subjectName">Subject Name + Code</h2>
+              <h3 class="subjectSched">Day + startTime : endTime</h3>
+              <p class="activityDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris felis nunc, aliquet eget pharetra vitae, venenatis vitae mi. Duis vulputate.</p>
+              <a href="#">Go to activity</a>
+            </div>
+          </div>
+          <div class="slide col-sm-3 col-md-3">
+            <div class="container-details">
+              <h2 class="subjectName">Subject Name + Code</h2>
+              <h3 class="subjectSched">Day + startTime : endTime</h3>
+              <p class="activityDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris felis nunc, aliquet eget pharetra vitae, venenatis vitae mi. Duis vulputate.</p>
+              <a href="#">Go to activity</a>
+            </div>
+          </div>
+          <div class="slide col-sm-3 col-md-3">
+            <div class="container-details">
+              <h2 class="subjectName">Subject Name + Code</h2>
+              <h3 class="subjectSched">Day + startTime : endTime</h3>
+              <p class="activityDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris felis nunc, aliquet eget pharetra vitae, venenatis vitae mi. Duis vulputate.</p>
+              <a href="#">Go to activity</a>
+            </div>
+          </div>
+          <div class="slide col-sm-3 col-md-3">
+            <div class="container-details">
+              <h2 class="subjectName">Subject Name + Code</h2>
+              <h3 class="subjectSched">Day + startTime : endTime</h3>
+              <p class="activityDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris felis nunc, aliquet eget pharetra vitae, venenatis vitae mi. Duis vulputate.</p>
+              <a href="#">Go to activity</a>
+            </div>
+          </div>
+          
+        </div>
+      <!-- </div> -->
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $('.slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 3
+        });
+    });
+      
+  </script>
+  
+</body>
+</html>

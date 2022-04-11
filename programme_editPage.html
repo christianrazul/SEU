@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SEU | Edit Programmes </title>
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- BoxIcons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    
+    <style>
+        .container-coursesTable{
+        margin: auto;
+        border-radius: 5px;
+        padding: 1em;
+        }
+    </style>
+</head>
+<body>
+  <section class="home-section">
+      <h2 class="mb-2 mt-3" style="color: white; text-align: center;">Edit Course</h2>
+            <div class="container-coursesInputForm" id="coursesTab_courseInputForm">
+                    <form action="#">
+                        <div class="row">
+                            <div class="form-group mb-3 col-md-6">
+                                <label for="subjectName" class="form-label">Subject Name:</label>
+                                <input type="text" class="form-control" id="subjectName">
+                            </div>
+                            <div class="form-group mb-3 col-md-6">
+                                <label for="subjectCode" class="form-label">Subject Code:</label>
+                                <input type="text" class="form-control" id="subjectCode">
+                            </div>
+                            <div class="form-group mb-3 col-md-6">
+                                <label for="courseDesc">Description:</label>
+                                <textarea class="form-control" id="courseDesc" rows="1"></textarea>
+                            </div>
+                            <div class="form-group mb-3 col-md-6">
+                                <label for="courseDept" class="form-label">Course Department:</label>
+                                <input type="text" class="form-control" id="courseDept">
+                            </div>
+                            <div class="form-group mb-3 col-md-6">
+                                <label for="courseDeptHead" class="form-label">Department Head:</label>
+                                <input type="text" class="form-control" id="courseDeptHead">
+                            </div>
+                            <div class="form-group mb-3 col-md-6">
+                                <label for="courseCert" class="form-label">Certification:</label>
+                                <select class="form-control" id="courseCert">
+                                    <option value="Major">Major</option>
+                                    <option value="Minor">Minor</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <input type="submit" value="Submit" class="submitButton">
+						<input type="reset" value="Reset" class="submitButton">
+                        <input type="submit" value="Back" class="submitButton">
+						
+                    </form>
+                </div>   
+  </section>
+  <script src="script.js"></script>
+ 
+</body>
+</html>
